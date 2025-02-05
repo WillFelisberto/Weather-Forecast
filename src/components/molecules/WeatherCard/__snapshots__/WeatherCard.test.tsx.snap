@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherCard Component should render the location and temperature correctly 1`] = `
+<div>
+  <div
+    class="bg-gradient-to-tr from-[--card-bg] to-[--card-bg-gradient]   min-w-[355px] px-[52px] py-[40px] text-left justify-end h-auto text-white p-6 rounded-2xl shadow-lg flex flex-col"
+  >
+    <div>
+      <svg
+        data-testid="weather-icon"
+      />
+    </div>
+    <div
+      class=" leading-[65px] flex flex-row center gap-[8px]"
+    >
+      <h2
+        class="text-3xl truncate leading-[65px] font-secondary font-bold capitalize"
+      >
+        Tehran
+      </h2>
+      <p
+        class="text-3xl leading-[65px] font-secondary font-light  "
+      >
+        35
+        °C
+      </p>
+    </div>
+    <p
+      class="text-2xl mt-[0px] leading-[65px] font-secondary font-light"
+    >
+      Wind Speed: 
+      11
+       km/h
+    </p>
+    <p
+      class="text-2xl mt-[0px] leading-[65px] font-secondary font-light"
+    >
+      Tuesday: 19:15
+    </p>
+    <p
+      class="capitalize mt-[0px] leading-[65px] text-2xl capitalize font-secondary font-light "
+    >
+      Cloudy
+    </p>
+  </div>
+</div>
+`;

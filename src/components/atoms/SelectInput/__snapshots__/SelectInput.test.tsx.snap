@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectInput renders the select input with the default selected option 1`] = `
+<div>
+  <div
+    class="flex items-center space-x-4"
+  >
+    <div
+      class="relative"
+    >
+      <button
+        class="flex items-center justify-between w-48 bg-gray-800 text-white px-4 py-2 rounded-lg border border-gray-700 hover:bg-gray-700 transition"
+      >
+        <span>
+          Option 1
+        </span>
+        <svg
+          class="lucide lucide-chevron-down"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6 9 6 6 6-6"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,16 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  mode: 'jit',
-  content: ['./src/app/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {
-      fontFamily: {
-        primary: ['var(--font-primary)']
-      }
+export const mode = 'jit';
+export const content = ['./src/app/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'];
+export const theme = {
+  extend: {
+    fontFamily: {
+      primary: ['var(--font-primary)', 'sans-serif'], // Inter
+      secondary: ['var(--font-secondary)', 'sans-serif'] // Poppins
     }
-  },
-  variants: {
-    extend: {}
-  },
-  plugins: [require('tailwind-scrollbar')]
+  }
 };
+export const variants = {
+  extend: {}
+};
+import tailwindScrollbar from 'tailwind-scrollbar';
+
+export const plugins = [tailwindScrollbar];

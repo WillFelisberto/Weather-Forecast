@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Poppins } from 'next/font/google';
 import { ReactNode } from 'react';
 
 import { MainProvider } from '@/components/providers/MainProvider';
@@ -10,6 +10,13 @@ import { MainLayout } from '@/components/templates/MainLayout';
 import { cn } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
+const poppins = Poppins({
+  subsets: ['latin'],
+  style: ['italic', 'normal'],
+  display: 'swap',
+  variable: '--font-secondary',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 export const metadata: Metadata = {
   title: 'Home page | Nextjs boilerplate',
@@ -24,7 +31,10 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body className={cn(inter.variable, 'font-primary')} suppressHydrationWarning>
+      <body
+        className={cn(inter.variable, poppins.variable, 'font-secondary')}
+        suppressHydrationWarning
+      >
         <MainProvider>
           <MainLayout>
             <main>{children}</main>

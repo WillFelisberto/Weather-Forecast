@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Component should render the title and highlight correctly 1`] = `
+<div>
+  <div
+    class="text-center text-white"
+  >
+    <h1
+      class="text-4xl md:text-5xl font-bold font-secondary leading-[65px]"
+    >
+      Seeing the weather
+       
+      <span
+        class="bg-gradient-to-r from-[#CAECFF] to-[#78CFFF] bg-clip-text text-transparent"
+      >
+        Dark Weather
+      </span>
+      !
+    </h1>
+  </div>
+</div>
+`;

@@ -1,97 +1,74 @@
-# Boilerplate and Starter for Next JS 15+, Tailwind CSS 3 and TypeScript
+# Next.js Weather App
 
-🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js (app routing), TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, React Testing Library, PostCSS, Tailwind CSS, Storybook, Plop, GH actions.
+Este projeto é um boilerplate baseado em Next.js, configurado com uma integração à API [Open-Meteo](https://open-meteo.com/) para consulta de previsão do tempo e informações sobre cidades.
 
-![Cover](https://svgshare.com/i/idk.svg)
+## 📋 Funcionalidades
 
-## :rocket: Features
-
-Developer experience first:
-
-- [Next.js](https://nextjs.org) for Static Site Generator
-- Type checking [TypeScript](https://www.typescriptlang.org)
-- Integrate with [Tailwind CSS](https://tailwindcss.com)
-- [Storybook](https://storybook.js.org) for components documentation
-- Strict Mode for TypeScript and React 18
-- Linter with [ESLint](https://eslint.org)
-- Code Formatter with [Prettier](https://prettier.io)
-- [Husky](https://typicode.github.io/husky/#/) for Git Hooks
-- [Lint-staged](https://github.com/okonet/lint-staged) for running linters on Git staged files
-- Testing with [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/)
-- Absolute Imports using `@` prefix
-- Nextjs custom layouts
-- [T3 env](https://env.t3.gg/) Manage your environment variables with ease
-- Message convention for git
-- Maximize lighthouse score
-- GH actions
-- Components generation with [Plop](https://plopjs.com/) and [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) convention
-
-## 📅 Plans
-
-- [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- [next-pwa](https://github.com/shadowwalker/next-pwa)
-
-## 🧪 Testing
-
-All tests are collocated with the source code inside the same directory. So, it makes it easier to find them. Coverage threshold is set to `70%`. In the `.jest` folder there is a custom provider for the all tests.
-
-## :information_source: How To Use
-
-To use this template you can simply click in **[Use this template](https://github.com/hadrysm/nextjs-boilerplate/generate)** or create your Next.js app based on this template by running:
-
-```bash
-pnpm create next-app -e https://github.com/hadrysm/nextjs-boilerplate
-```
-
-## 🚀 Deploy to production
-
-Install command on Vercel:
-
-```
-corepack use pnpm@`pnpm -v` && pnpm i
-```
-
-You can see the results locally in production mode with:
-
-```shell
-pnpm build
-```
-
-```shell
-pnpm start
-```
-
-## :gear: Generating components
-
-```bash
-pnpm generate Button
-```
-
-Result (if you chose an atom component):
-
-```
-└── components
-      └── atoms
-        └── Button
-          ├── index.ts
-          ├── Button.stories.tsx
-          ├── Button.test.tsx
-          └── Button.tsx
-```
-
-## 🤝 Contributing
-
-1. Fork this repository;
-2. Create your branch: `git checkout -b my-awesome-contribution`;
-3. Commit your changes: `git commit -m 'feat: Add some awesome contribution'`;
-4. Push to the branch: `git push origin my-awesome-contribution`.
-
-## License
-
-Licensed under the MIT License, Copyright © 2024
-
-See [LICENSE](LICENSE) for more information.
+- **Consulta de previsão do tempo**: Busca dados de temperatura, condições climáticas, entre outros, fornecidos pela Open-Meteo API.
+- **Busca de cidades**: Permite ao usuário procurar cidades pelo nome para visualizar suas condições climáticas.
+- **Configuração completa de desenvolvimento**: Inclui Husky, lint-staged, ESLint, Prettier, Jest, Storybook e Plop para automatizar tarefas de desenvolvimento e padronização de código.
+- **UI com Tailwind CSS**: Utiliza Tailwind para estilização rápida e customizável.
+- **Teste automatizado**: Configuração com Jest e React Testing Library para testes de unidade e integração.
 
 ---
 
-Made with much :heart: and :muscle: by Mateusz Hadryś :blush: <a href="https://www.linkedin.com/in/mateusz-hadry%C5%9B/">My Contact</a>
+## 🛠️ Configuração do Projeto
+
+### Requisitos
+
+- Node.js v18.20.2 ou superior
+- PNPM como gerenciador de pacotes
+
+### Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/WillFelisberto/Weather-Forecast
+   ```
+
+2. Acesse o diretório do projeto:
+
+   ```bash
+   cd Weather-Forecast
+   ```
+
+3. Instale as dependências:
+   ```bash
+   pnpm install
+   ```
+
+## Variáveis de Ambiente
+
+```env
+  NEXT_PUBLIC_APP_DOMAIN=
+  NEXT_PUBLIC_WEATHER_API_URL=
+  NEXT_PUBLIC_GEOCODING_API_URL=
+```
+
+## 🚀 Scripts Disponíveis
+
+- `pnpm dev`: Inicia o servidor de desenvolvimento.
+- `pnpm build`: Compila a aplicação para produção.
+- `pnpm start`: Inicia o servidor de produção.
+- `pnpm lint`: Analisa o código em busca de problemas.
+- `pnpm test`: Executa os testes automatizados.
+- `pnpm storybook`: Inicia o Storybook.
+- `pnpm generate`: Gera novos componentes ou páginas usando Plop.
+
+## 📚 Tecnologias Utilizadas
+
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Linguagem:** TypeScript
+- **Estilização:** Tailwind CSS
+- **Teste:** Jest e React Testing Library
+- **Componentização:** Storybook
+- **Automação:** Husky, lint-staged, Plop
+
+## 🌐 API Utilizada
+
+- **[Open-Meteo API](https://open-meteo.com/)**: Uma API gratuita para consulta de previsão do tempo.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.

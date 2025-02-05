@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component renders the correct text 1`] = `
+<div>
+  <footer
+    class="w-full py-4 text-center mt-auto"
+  >
+    <p
+      class="text-white text-sm"
+    >
+      Made with 
+      <span
+        class="text-red-500"
+      >
+        &lt;3
+      </span>
+       by
+      <a
+        class="text-blue-400 hover:underline ml-1"
+        href="https://github.com/willFelisberto/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Willian Souza
+      </a>
+    </p>
+  </footer>
+</div>
+`;

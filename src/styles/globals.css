@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-color: #24343d;
+  --card-bg: #24353e;
+  --card-bg-gradient: #3b5868;
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+body {
+  @apply font-primary; /* Define a fonte principal */
+  background: url('/background.png') no-repeat center center fixed;
+  background-size: cover;
+}

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput Component renders the input with placeholder 1`] = `
+<div>
+  <div
+    class="flex items-center gap-2"
+  >
+    <input
+      class="flex-1 px-4 py-2 rounded-[12px] text-white bg-[--primary-color] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+      placeholder="Test search..."
+      type="text"
+      value=""
+    />
+    <button
+      class="px-4 py-2 rounded-xl text-white font-medium transition-all bg-gradient-to-r from-[#3A5E72] to-[#5C93B1] hover:opacity-80 px-4 py-2  rounded-md text-white transition-colors bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      <svg
+        class="lucide lucide-search"
+        fill="none"
+        height="20"
+        role="search-icon"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="11"
+          cy="11"
+          r="8"
+        />
+        <path
+          d="m21 21-4.3-4.3"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
